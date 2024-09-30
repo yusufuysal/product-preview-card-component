@@ -34,8 +34,7 @@ body {
 }
 
 .product-content {
-  padding-inline: 1.6rem;
-  padding-block: 1rem;
+  padding: 2rem;
 }
 .product-image-wrapper {
   min-width: 50%;
@@ -48,6 +47,7 @@ body {
 
 .product-category {
   color: $dark-grayish-blue;
+  font-size: 0.8rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
@@ -70,6 +70,7 @@ body {
 .product-description {
   font-size: 14px;
   color: $dark-grayish-blue;
+  line-height: 1.8;
 }
 
 .product-price-wrapper {
@@ -83,7 +84,7 @@ body {
 .product-discounted-price {
   font-weight: 700;
   font-size: 2.2rem;
-  color: var(--dark-cyan);
+  color: $dark-cyan;
 }
 
 .product-previous-price {
@@ -104,8 +105,13 @@ body {
   border: none;
   background: $dark-cyan;
   color: $white;
-  font-size: 18px;
+  font-size: 1rem;
   cursor: pointer;
+
+  span {
+    font-weight: 600;
+    letter-spacing: 0.6px;
+  }
 }
 
 .add-to-cart:hover {
@@ -118,7 +124,4 @@ body {
     flex-direction: row;
     max-width: 600px;
   }
-  //  .product-image {
-  //    width: 50%;
-  //  }
 }

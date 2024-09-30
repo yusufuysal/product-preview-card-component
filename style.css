@@ -27,8 +27,7 @@ body {
 }
 
 .product-content {
-  padding-inline: 1.6rem;
-  padding-block: 1rem;
+  padding: 2rem;
 }
 
 .product-image-wrapper {
@@ -44,6 +43,7 @@ body {
 
 .product-category {
   color: hsl(228, 12%, 48%);
+  font-size: 0.8rem;
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
@@ -66,6 +66,7 @@ body {
 .product-description {
   font-size: 14px;
   color: hsl(228, 12%, 48%);
+  line-height: 1.8;
 }
 
 .product-price-wrapper {
@@ -79,7 +80,7 @@ body {
 .product-discounted-price {
   font-weight: 700;
   font-size: 2.2rem;
-  color: var(--dark-cyan);
+  color: hsl(158, 36%, 37%);
 }
 
 .product-previous-price {
@@ -100,8 +101,12 @@ body {
   border: none;
   background: hsl(158, 36%, 37%);
   color: hsl(0, 0%, 100%);
-  font-size: 18px;
+  font-size: 1rem;
   cursor: pointer;
+}
+.add-to-cart span {
+  font-weight: 600;
+  letter-spacing: 0.6px;
 }
 
 .add-to-cart:hover {
