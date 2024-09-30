@@ -7,7 +7,6 @@ $very-dark-blue: hsl(212, 21%, 14%);
 $dark-grayish-blue: hsl(228, 12%, 48%);
 $white: hsl(0, 0%, 100%);
 
-
 *,
 *::before,
 *::after {
@@ -31,15 +30,19 @@ body {
   background: $white;
   border-radius: 12px;
   overflow: hidden;
+  margin: 1.5rem;
 }
 
 .product-content {
   padding-inline: 1.6rem;
   padding-block: 1rem;
 }
+.product-image-wrapper {
+  min-width: 50%;
+}
 .product-image {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 
@@ -115,7 +118,7 @@ body {
     flex-direction: row;
     max-width: 600px;
   }
-  .product-image {
-    width: 50%;
-  }
+  //  .product-image {
+  //    width: 50%;
+  //  }
 }

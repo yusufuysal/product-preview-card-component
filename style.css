@@ -23,6 +23,7 @@ body {
   background: hsl(0, 0%, 100%);
   border-radius: 12px;
   overflow: hidden;
+  margin: 1.5rem;
 }
 
 .product-content {
@@ -30,9 +31,13 @@ body {
   padding-block: 1rem;
 }
 
+.product-image-wrapper {
+  min-width: 50%;
+}
+
 .product-image {
   width: 100%;
-  height: auto;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -108,8 +113,5 @@ body {
     display: flex;
     flex-direction: row;
     max-width: 600px;
-  }
-  .product-image {
-    width: 50%;
   }
 }/*# sourceMappingURL=style.css.map */
