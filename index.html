@@ -3,19 +3,38 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
+    <!-- Favicon WebP -->
+    <link
+      rel="icon"
+      type="image/webp"
+      sizes="32x32"
+      href="images/favicon-32x32.webp"
+    />
+    <!-- Favicon PNG (fallback for browsers that do not support WebP) -->
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
+      rel="stylesheet"
     />
 
     <title>Frontend Mentor | Product preview card component</title>
+    <meta
+      name="description"
+      content="Discover the elegant Gabrielle Essence Eau De Parfum in this beautifully designed product preview card, crafted by Frontend Mentor and coded by Yusuf Uysal."
+    />
+
     <link rel="stylesheet" href="style.css" />
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
         font-size: 11px;
@@ -31,11 +50,11 @@
       <picture class="product-image-wrapper">
         <source
           media="(min-width: 1440px)"
-          srcset="./images/image-product-desktop.jpg"
+          srcset="./images/image-product-desktop.webp"
         />
         <img
           class="product-image"
-          src="./images/image-product-mobile.jpg"
+          src="./images/image-product-mobile.webp"
           alt="Product Card"
         />
       </picture>
@@ -56,16 +75,9 @@
 
         <button class="add-to-cart">
           <img src="./images/icon-cart.svg" alt="Shopping cart" />
-          Add to Cart
+          <span>Add to Cart</span>
         </button>
       </div>
     </main>
-
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Yusuf Uysal</a>.
-    </div>
   </body>
 </html>
